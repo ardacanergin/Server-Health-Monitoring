@@ -1,0 +1,17 @@
+- hostname: 10.185.28.154
+  display_name: "CentOS Server 1"
+  username: centos1admin
+  password: ardacan1
+  services: ["sshd", "httpd", "crond"]
+  tags: ["web", "lan"]
+  admin_email: "ardacanergin1@gmail.com"  # Alert emails go here
+
+- hostname: 10.185.28.113
+  display_name: "CentOS Server 2"
+  username: centos1admin
+  password: ardacan1
+  services: ["sshd", "httpd", "crond", "mariadb", "nginx"]
+  tags: ["db", "server"]
+  admin_email: "ardacanergin1@gmail.com"  # Alert emails go here
+  
+

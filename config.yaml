@@ -1,0 +1,21 @@
+# Server monitoring configuration
+
+admin_email: "${ADMIN_EMAIL}"
+max_retries: 3
+retry_delay: 5
+max_workers: 5
+
+smtp:
+  server: ${SMTP_SERVER} 
+  port: ${SMTP_PORT}  # GMAIL SMTP port
+  username: ${SMTP_USERNAME}
+  password: ${SMTP_PASSWORD}
+  use_tls: true
+
+admin_email: " example@gmail.com" # fallback admin email for alerts
+
+report:
+  recipients:
+    - "example@gmail.com"
+  director_recipients:
+    - "example@gmail.com"
